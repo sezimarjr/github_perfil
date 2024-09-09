@@ -8,8 +8,11 @@ function App() {
   const [nomeUsuario, setNomeUsuario] = useState("");
   return (
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
-      {console.log(nomeUsuario)}
+      <input
+        className="inputName"
+        type="text"
+        onBlur={(e) => setNomeUsuario(e.target.value)}
+      />
 
       {nomeUsuario.length > 4 && (
         <>
